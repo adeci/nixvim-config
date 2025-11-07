@@ -15,6 +15,7 @@
     ./plugins/sleuth.nix
     ./plugins/wilder.nix
     ./plugins/web-devicons.nix
+    ./plugins/yanky.nix
   ];
 
   globals.mapleader = " ";
@@ -22,30 +23,10 @@
   # Global keymaps
   keymaps = [
     {
-      mode = "n"; # Only in normal mode!
+      mode = "n";
       key = "<Esc>";
       action = "<cmd>nohlsearch<CR>";
       options.desc = "Clear search highlight";
-    }
-
-    # Diagnostic navigation
-    {
-      mode = "n";
-      key = "[d";
-      action.__raw = "vim.diagnostic.goto_prev";
-      options.desc = "Previous diagnostic";
-    }
-    {
-      mode = "n";
-      key = "]d";
-      action.__raw = "vim.diagnostic.goto_next";
-      options.desc = "Next diagnostic";
-    }
-    {
-      mode = "n";
-      key = "<leader>e";
-      action.__raw = "vim.diagnostic.open_float";
-      options.desc = "Show diagnostic error";
     }
 
     # Buffer navigation
