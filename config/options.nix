@@ -28,6 +28,7 @@
 
     list = true;
     listchars = {
+      tab = "→ "; # Show tabs as arrow followed by spaces
       trail = "·"; # Show trailing spaces as dots
       nbsp = "␣"; # Show non-breaking spaces
     };

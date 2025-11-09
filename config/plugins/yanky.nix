@@ -5,9 +5,6 @@
       enable = true;
       enableTelescope = true;
     };
-
-    # Add yanky to completion sources
-    cmp_yanky.enable = true;
   };
 
   # Keymaps for yanky

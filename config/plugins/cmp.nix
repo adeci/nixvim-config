@@ -19,7 +19,6 @@
           { name = "path"; }
           { name = "buffer"; }
           { name = "luasnip"; }
-          { name = "cmp_yanky"; }
         ];
 
         mapping = {
